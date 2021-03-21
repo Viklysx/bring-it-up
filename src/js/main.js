@@ -2,6 +2,7 @@ import Slider from './modules/slider/Slider';
 import PlayVideo from './modules/PlayVideo';
 import MainSlider from './modules/slider/Slider-main';
 import MiniSlider from './modules/slider/Slider-mini';
+import Difference from './modules/difference';
 
 window.addEventListener('DOMContentLoaded', () => {
     const slider = new MainSlider({ btns: '.next', container: '.page' });
@@ -32,4 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
         activeClass: 'feed__item-active'
     })
     feedSlider.init();
+
+    new Difference('.officerold', '.officernew', '.officer__card-item').init();
 });
