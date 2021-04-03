@@ -8,6 +8,8 @@ import Form from './modules/form';
 window.addEventListener('DOMContentLoaded', () => {
     const slider = new MainSlider({ btns: '.next', container: '.page' });
     slider.render();
+    const modulePageSlider = new MainSlider({ container: '.moduleapp', btns: '.next' });
+    modulePageSlider.render();
     const player = new PlayVideo('.showup .play', '.overlay');
     player.init();
     const showUp = new MiniSlider({
