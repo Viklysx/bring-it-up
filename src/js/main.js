@@ -10,8 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
     slider.render();
     const modulePageSlider = new MainSlider({ container: '.moduleapp', btns: '.next' });
     modulePageSlider.render();
-    const player = new PlayVideo('.showup .play', '.overlay');
-    player.init();
+    new PlayVideo('.showup .play', '.overlay').init();
+    new PlayVideo('.module__video-item .play', '.overlay').init();
     const showUp = new MiniSlider({
         container: '.showup__content-slider',
         prev: '.showup__prev',
